@@ -1,5 +1,3 @@
-// App.js
-
 import "./App.css";
 import MovieList from "./components/MovieList";
 import Spinner from "./components/Spinner";
