@@ -1,21 +1,27 @@
 import React from "react";
 
-function MovieCard(props) {
+function ImprovedMovieCard(props) {
   const { movie, clickToDelete } = props;
+
+  function generateScoreLabel(score) {
+    if (score > 9) {
+      return <span className="green">9+</span>
+    }
+    else if(score < 7) {
+      return <span className="red">{score}</span>
+    }
+    else {
+      return <span className="black">{score}</span>
+    }
+
+  }
 
   return (
     <div className="MovieCard">
       <h3>{movie.title}</h3>
       <p>Director: {movie.director}</p>
-      <p>Rating: {movie.IMDBRating}</p>
+      <p>IMDB Rating: { generateScoreLabel(movie.IMDBRating) }</p>
 
-      {/* 2. */}
-      {/* 
-      {movie.hasOscars && <p>Got the Oscar Award! 🏆</p>}
-      {!movie.hasOscars && <p>Great movie but no Oscars! </p>} 
-      */}
-
-      {/* 3. */}
       {
         movie.hasOscars
           ? <p>Got the Oscar Award! 🏆</p>
@@ -29,4 +35,4 @@ function MovieCard(props) {
   );
 }
 
-export default MovieCard;
+export default ImprovedMovieCard;
