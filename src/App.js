@@ -7,19 +7,16 @@ import { useState } from "react";
 import ImprovedMovieList from "./components/ImprovedMovieList";
 
 function App() {
-  // 1.
   const [isLoading, setIsLoading] = useState(false);
   // const [isLoading, setIsLoading] = useState(true);
 
   if (isLoading) {
-    <div className="App">
-      <Spinner />
-    </div>;
+    return <Spinner />;
   } else {
     return (
       <div className="App">
-        {/* <ImprovedMovieList />; */}
-        <MovieList />
+        {/* <MovieList /> */}
+        <ImprovedMovieList />;
       </div>
     );
   }
