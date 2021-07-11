@@ -11,7 +11,6 @@ function App() {
   const [isLoading, setIsLoading] = useState(false);
   // const [isLoading, setIsLoading] = useState(true);
 
-  let content;
   if (isLoading) {
     <div className="App">
       <Spinner />
