@@ -13,13 +13,17 @@ function App() {
 
   let content;
   if (isLoading) {
-    content = <Spinner />;
+    <div className="App">
+      <Spinner />
+    </div>;
   } else {
-    // content = <MovieList />;
-    content = <ImprovedMovieList />;
+    return (
+      <div className="App">
+        {/* <ImprovedMovieList />; */}
+        <MovieList />
+      </div>
+    );
   }
-
-  return <div className="App">{content}</div>;
 }
 
 export default App;
