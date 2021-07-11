@@ -1,6 +1,7 @@
 import { useState } from "react";
 import moviesData from "../movies-data.json";
 
+// import MovieCard from "./MovieCard";
 import ImprovedMovieCard from "./ImprovedMovieCard";
 
 function ImprovedMovieList() {
@@ -19,27 +20,6 @@ function ImprovedMovieList() {
     setShowMovies(!showMovies);
   };
 
-  // return (
-  //   <div>
-  //     <h2>Improved Movie List</h2>
-
-  //     {showMovies ? (
-  //       movies.map((movie) => {
-  //         return (
-  //           <ImprovedMovieCard
-  //             key={movie._id}
-  //             movie={movie}
-  //             clickToDelete={deleteMovie}
-  //           />
-  //         );
-  //       })
-  //     ) : (
-  //       <button onClick={toggleShowMovies}>
-  //         {showMovies ? "Hide" : "Show"}
-  //       </button>
-  //     )}
-  //   </div>
-  // );
 
   return (
     <div>

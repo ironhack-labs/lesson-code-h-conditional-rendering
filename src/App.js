@@ -16,7 +16,7 @@ function App() {
     return (
       <div className="App">
         {/* <MovieList /> */}
-        <ImprovedMovieList />;
+        <ImprovedMovieList />
       </div>
     );
   }
