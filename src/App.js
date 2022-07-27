@@ -1,7 +1,7 @@
 // App.js
 
 import "./App.css";
-import MovieList from "./components/MovieList";
+// import MovieList from "./components/MovieList";
 import Spinner from "./components/Spinner";
 import { useState } from "react";
 import ImprovedMovieList from "./components/ImprovedMovieList";
